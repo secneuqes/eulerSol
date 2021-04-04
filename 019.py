@@ -1,15 +1,14 @@
-thirtyone = [1,3,5,7,8,10,12]
-
 def findoutplus(a,b):
-        for each in thirtyone:
-            if each == b:
-                return 31
-        if a % 4 == 0 and a % 200 != 0:
-            if b == 2: return 29
-            else: return 30    
-        else:
-            if b == 2: return 28
-            else: return 30 
+    thirtyone = [1,3,5,7,8,10,12]
+    for each in thirtyone:
+        if each == b:
+            return 31
+    if a % 4 == 0 and a % 200 != 0:
+        if b == 2: return 29
+        else: return 30    
+    else:
+        if b == 2: return 28
+        else: return 30 
 
 def euler():
     f_day = 7
