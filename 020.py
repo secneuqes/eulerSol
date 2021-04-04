@@ -11,3 +11,5 @@ def euler(k):
     print(res)
 
 euler(100)
+
+# 648
