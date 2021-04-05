@@ -43,3 +43,7 @@ def factors(n):
 
 def nFactorial(n):
     return n * nFactorial(n-1) if n > 1 else 1
+
+def fibo(n):
+    if n <= 2: return 1
+    else: return fibo(n-2) + fibo(n-1)
