@@ -1,7 +1,7 @@
 import math
 
 def nPrime(n):
-    # 
+    # n 번째 소수
     start = 2
     count = 0
     while True:
