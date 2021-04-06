@@ -17,7 +17,6 @@ def euler(n):
             except:
                 b += 1
         a += 1
-
     return sum(arr_succ)
 
 def abNum(n):
