@@ -1,5 +1,3 @@
-# var 선언
-
 # define euler function
 
 def euler():
