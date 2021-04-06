@@ -1,20 +1,21 @@
 import math
 from runtime import *
 
-startR()
-
 def euler(n):
     arr_abnum = abNum(n)
     arr_succ = set(range(n))
     a = 0
+    lenabnum = len(arr_abnum) - 2
 
-    while a <= len(arr_abnum)-2:
+    while a <= lenabnum:
         b = 0
         while b <= a:
-            if arr_abnum[a]+arr_abnum[b] >= n:
+            fa = arr_abnum[a]
+            fb = arr_abnum[b]
+            if fa+fb >= n:
                 break
             try:
-                arr_succ.remove(arr_abnum[a]+arr_abnum[b])
+                arr_succ.remove(fa+fb)
             except:
                 pass
             b += 1
@@ -44,6 +45,8 @@ def nDivisors(n):
     res = list(set(res))
     # res.sort()
     return res
+
+startR()
 
 print(euler(28123))
 
