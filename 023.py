@@ -1,21 +1,23 @@
 import math
-import timeit
+from runtime import *
 
-start = timeit.default_timer()
+startR()
 
 def euler(n):
     arr_abnum = abNum(n)
     arr_succ = set(range(n))
     a = 0
 
-    while a <= len(arr_abnum)-1:
+    while a <= len(arr_abnum)-2:
         b = 0
-        while b <= a and arr_abnum[a]+arr_abnum[b] < n:
+        while b <= a:
+            if arr_abnum[a]+arr_abnum[b] >= n:
+                break
             try:
                 arr_succ.remove(arr_abnum[a]+arr_abnum[b])
-                b += 1
             except:
-                b += 1
+                pass
+            b += 1
         a += 1
     return sum(arr_succ)
 
@@ -45,8 +47,6 @@ def nDivisors(n):
 
 print(euler(28123))
 
-stop = timeit.default_timer()
-
-print('Time: ', stop - start)
+stopR()
 
 # 4179871
