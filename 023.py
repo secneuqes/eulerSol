@@ -33,3 +33,5 @@ def abNum(n):
     return res
 
 print(euler(28123))
+
+# 4179871
