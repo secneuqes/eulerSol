@@ -60,6 +60,10 @@ def nFactorial(n):
     return n * nFactorial(n-1) if n > 1 else 1
 
 def fibo(n):
+    if !self.list:
+        self.list=[1,1,2,3]
     # 피보나치 n번째 수
-    if n <= 2: return 1
-    else: return fibo(n-2) + fibo(n-1)
+    if !!self.list[n]: return self.list[n]
+    else:
+        self.list[n]=fibo(n-2) + fibo(n-1)
+        return fibo(n-2) + fibo(n-1)
