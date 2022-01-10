@@ -1,4 +1,4 @@
-import functools
+import functools #used to cache calculated functions
 
 @functools.lru_cache(None)
 def fib(n):
